@@ -13,6 +13,26 @@ def subtract(a, b):
 
 subtract(10, 4)  # Returns 6
 ```
+
+### distance_from_zero(x)
+
+The function calculates how far a number is from zero. It calls the existing `subtract()` function and always returns a positive distance.
+
+The function may give an error if a non-numeric value, such as text, is provided.
+
+Example:
+
+```python
+def distance_from_zero(x):
+    if x >= 0:
+        return subtract(x, 0)
+    else:
+        return subtract(0, x)
+
+distance_from_zero(-4)  # Returns 4
+```
+
+
 ## add(a, b)
 
 Adds two numbers together and returns the result.
@@ -48,3 +68,4 @@ def multiply(a,b):
 
 multiply(1,2)  #returns 2
 '''
+
