@@ -33,6 +33,24 @@ add(2, 3)      # returns 5
 add(-3, 5)     # returns 2
 add(5, 8)      # returns 13
 ```
+
+## sum_list(values)
+
+The `sum_list()` function adds all numbers in a list together. It can be used whenever the total of multiple numbers is needed.
+
+The function may break or give an error if non-numeric values, such as text, are provided.
+
+Example:
+
+```python
+def sum_list(values):
+    total = 0
+    for value in values:
+        total = add(total, value)
+    return total
+
+sum_list([1, 2, 3, 4])  # Returns 10
+
 #Multiply 
 
 The function is used when calculating the product between two numbers 
